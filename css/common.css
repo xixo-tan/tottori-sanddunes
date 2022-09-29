@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: #372A23;
+}
+
+body {
+  background-color: #FFFAF4;
+}
+
+/* header */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 3%;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  display: inline-block;
+  margin: 0 15px;
+  font-family: 'Noto Sans';
+  font-size: 26px;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+}
+
+/* first-view */
+#first-view {
+  margin: 100px 130px;
+  margin-bottom: 0;
+}
+
+.fv-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title-fv-jp {
+  font-family: 'Hiragino Maru Gothic Pro';
+  font-size: 48px;
+  letter-spacing: 0.1em;
+}
+
+.title-fv-en {
+  font-family: 'Noto Sans';
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+}
+
+.fv-description {
+  margin-top: 30px;
+  font-family: 'Hiragino Kaku Gothic Pro';
+  font-size: 18px;
+  line-height: 2em;
+}
+
+.fv-img {
+  width: 640px;
+}
+
+.triangle-below {
+  text-align: center;
+}
+
+.triangle-img {
+  margin: 100px 0;
+}
+
+/* sandDune */
+#sandDune {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.title-sd {
+  font-family: 'Noto Sans';
+  font-weight: 500;
+  font-size: 60px;
+  letter-spacing: 0.2em;
+}
+
+#sandDune>p {
+  margin: 60px auto;
+  font-family: 'Noto Sans JP';
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  line-height: 2em;
+}
+
+.sd-images {
+  display: flex;
+  justify-content: center;
+}
+
+.sd-img-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.sd-image {
+  margin: 5px;
+}
+
+.sd-img-1 {
+  width: 245px;
+  height: 410px;
+}
+
+.sd-img-2 {
+  width: 255px;
+  height: 190px;
+}
+
+.sd-img-3 {
+  width: 255px;
+  height: 255px;
+}
+
+.sd-img-4 {
+  width: 245px;
+  height: 410px;
+}
+
+/* cafe */
+#cafe {
+  margin-top: 100px;
+}
+
+.title-cafe {
+  text-align: center;
+}
+
+.cafa-takahama-img {
+  width: 460px;
+}
+
+footer {
+  background-color: #8E776A;
+}
