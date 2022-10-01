@@ -136,10 +136,63 @@ li {
 
 .title-cafe {
   text-align: center;
+  font-family: 'Noto Sans';
+  font-weight: 500;
+  font-size: 64px;
+  letter-spacing: 0.2em;
 }
 
-.cafa-takahama-img {
+.cafe-name {
+  font-family: 'Noto Sans JP';
+  font-size: 36px;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+}
+
+.cafe-discription {
+  margin-top: 30px;
+  font-family: 'Noto Sans JP';
+  font-size: 16px;
+  letter-spacing: 0.1em;
+}
+
+.cafe-btn {
+  display: inline-block;
+  margin-top: 30px;
+  font-family: 'Noto Sans';
+  font-size: 17px;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+}
+
+.cafe-takahama {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.takahama-bg-box {
+  width: 488px;
+  height: 488px;
+  background-color: #C0D3DB;
+  z-index: 1;
+}
+
+.takahama-img {
+  margin-left: 130px;
   width: 460px;
+  z-index: 2;
+}
+
+.takahama-small-box {
+  margin-left: 50px;
+}
+
+.takahama-btn {
+  border-bottom: solid 1px #8E776A;
+  padding-left: 300px;
+  padding-bottom: 5px;
+  padding-right: 10px;
 }
 
 footer {
