@@ -8,6 +8,15 @@ body {
   background-color: #FFFAF4;
 }
 
+.title-section {
+  text-align: center;
+  font-family: 'Noto Sans';
+  font-weight: 500;
+  font-size: 64px;
+  letter-spacing: 0.2em;
+  margin-bottom: 30px;
+}
+
 /* header */
 header {
   display: flex;
@@ -131,15 +140,7 @@ li {
 
 /* cafe */
 #cafe {
-  margin-top: 100px;
-}
-
-.title-cafe {
-  text-align: center;
-  font-family: 'Noto Sans';
-  font-weight: 500;
-  font-size: 64px;
-  letter-spacing: 0.2em;
+  margin: 100px 0;
 }
 
 .cafe-name {
@@ -151,6 +152,7 @@ li {
 
 .cafe-discription {
   margin-top: 30px;
+  margin-left: 5px;
   font-family: 'Noto Sans JP';
   font-size: 16px;
   letter-spacing: 0.1em;
@@ -163,20 +165,30 @@ li {
   font-size: 17px;
   letter-spacing: 0.1em;
   text-decoration: none;
+  border-bottom: solid 1px #8E776A;
+  padding-bottom: 5px;
 }
 
-.cafe-takahama {
+.cafe-style-odd {
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-bottom: 150px;
 }
 
-.takahama-bg-box {
+.cafe-style-even {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin-bottom: 150px;
+}
+
+/* .takahama-bg-box {
   width: 488px;
   height: 488px;
   background-color: #C0D3DB;
   z-index: 1;
-}
+} */
 
 .takahama-img {
   margin-left: 130px;
@@ -184,17 +196,144 @@ li {
   z-index: 2;
 }
 
-.takahama-small-box {
+.takahama-text {
   margin-left: 50px;
 }
 
 .takahama-btn {
-  border-bottom: solid 1px #8E776A;
   padding-left: 300px;
-  padding-bottom: 5px;
   padding-right: 10px;
 }
 
+.totto-img {
+  width: 490px;
+  height: 300px;
+  object-fit: cover;
+  margin-right: 130px;
+}
+
+.totto-text {
+  margin-right: 50px;
+}
+
+.totto-btn {}
+
+.sandbox-img {
+  margin-left: 130px;
+  width: 460px;
+}
+
+.sandbox-text {
+  margin-left: 50px;
+}
+
+.sandbox-btn {
+  padding-left: 300px;
+  padding-right: 10px;
+}
+
+.sankaku-img {
+  width: 490px;
+  height: 300px;
+  object-fit: cover;
+  margin-right: 130px;
+}
+
+.sankaku-text {
+  margin-right: 50px;
+}
+
+.sankaku-btn {}
+
+/* souvenirs */
+#souvenir {
+  text-align: center;
+  margin-bottom: 150px;
+}
+
+.subtitle-section {
+  font-size: 20px;
+  font-family: 'Noto Sans JP';
+  letter-spacing: 0.2em;
+  font-weight: 300;
+}
+
+.souvenirs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 50px 200px 50px;
+}
+
+.sv-img {
+  width: 275px;
+  height: 205px;
+  object-fit: cover;
+  margin: 10px;
+}
+
+.viewmore-btn {
+  text-decoration: none;
+  background-color: #E0B394;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+/* footer */
 footer {
   background-color: #8E776A;
+}
+
+.footer-main-title {
+  font-size: 48px;
+  padding-top: 70px;
+  margin-left: 130px;
+}
+
+.footer-box {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 140px;
+  padding-right: 300px;
+}
+
+.footer-title {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.special-thanks a {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  margin-left: 50px;
+  text-decoration: none;
+}
+
+.st-icon {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+}
+
+.contact-box {
+  display: flex;
+  align-items: center;
+}
+
+.contact-name {
+  font-size: 24px;
+  font-family: 'Noto Sans';
+  margin-right: 50px;
+}
+
+.contact-icon {
+  height: 24px;
+  margin: 10px;
+}
+
+.contact-address {
+  margin-top: 15px;
+  font-size: 16px;
+  text-decoration: none;
 }
