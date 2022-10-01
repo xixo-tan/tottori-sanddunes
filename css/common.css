@@ -57,6 +57,7 @@ li {
 }
 
 .title-fv-en {
+  margin-top: 15px;
   font-family: 'Noto Sans';
   font-weight: 400;
   font-size: 16px;
@@ -66,8 +67,8 @@ li {
 .fv-description {
   margin-top: 30px;
   font-family: 'Hiragino Kaku Gothic Pro';
-  font-size: 18px;
-  line-height: 2em;
+  font-size: 17px;
+  line-height: 2.5em;
 }
 
 .fv-img {
@@ -116,6 +117,7 @@ li {
 
 .sd-image {
   margin: 5px;
+  object-fit: cover;
 }
 
 .sd-img-1 {
@@ -136,6 +138,7 @@ li {
 .sd-img-4 {
   width: 245px;
   height: 410px;
+  object-position: top 0px left 15px;
 }
 
 /* cafe */
@@ -173,14 +176,14 @@ li {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-bottom: 150px;
+  margin-bottom: 200px;
 }
 
 .cafe-style-even {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
-  margin-bottom: 150px;
+  margin-bottom: 200px;
 }
 
 /* .takahama-bg-box {
@@ -190,10 +193,24 @@ li {
   z-index: 1;
 } */
 
+.takahama-img-box {
+  position: relative
+}
+
+.takahama-img-box::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: -70px;
+  background-color: #C0D3DB;
+  width: 488px;
+  height: 488px;
+  z-index: -3;
+}
+
 .takahama-img {
   margin-left: 130px;
   width: 460px;
-  z-index: 2;
 }
 
 .takahama-text {
@@ -203,6 +220,21 @@ li {
 .takahama-btn {
   padding-left: 300px;
   padding-right: 10px;
+}
+
+.totto-img-box {
+  position: relative;
+}
+
+.totto-img-box::before {
+  content: "";
+  position: absolute;
+  z-index: -3;
+  background-color: #E0B394;
+  width: 362px;
+  height: 658px;
+  right: 0px;
+  top: -200px;
 }
 
 .totto-img {
@@ -216,11 +248,31 @@ li {
   margin-right: 50px;
 }
 
-.totto-btn {}
+.totto-btn {
+  padding-left: 10px;
+  padding-right: 500px;
+}
+
+.sandbox-img-box {
+  position: relative;
+}
+
+.sandbox-img-box::before {
+  content: "";
+  position: absolute;
+  z-index: -3;
+  background-color: #D5A28A;
+  width: 445px;
+  height: 445px;
+  left: 0px;
+  top: -70px;
+}
 
 .sandbox-img {
   margin-left: 130px;
-  width: 460px;
+  width: 464px;
+  height: 285px;
+  object-fit: cover;
 }
 
 .sandbox-text {
@@ -230,6 +282,21 @@ li {
 .sandbox-btn {
   padding-left: 300px;
   padding-right: 10px;
+}
+
+.sankaku-img-box {
+  position: relative;
+}
+
+.sankaku-img-box::before {
+  content: "";
+  position: absolute;
+  z-index: -3;
+  background-color: #DEE9EB;
+  width: 550px;
+  height: 435px;
+  right: 0px;
+  top: -70px;
 }
 
 .sankaku-img {
@@ -243,7 +310,10 @@ li {
   margin-right: 50px;
 }
 
-.sankaku-btn {}
+.sankaku-btn {
+  padding-left: 10px;
+  padding-right: 500px;
+}
 
 /* souvenirs */
 #souvenir {
@@ -281,7 +351,7 @@ li {
 
 /* footer */
 footer {
-  background-color: #8E776A;
+  background-color: #EADCD2;
 }
 
 .footer-main-title {
@@ -336,4 +406,74 @@ footer {
   margin-top: 15px;
   font-size: 16px;
   text-decoration: none;
+}
+
+/* souvenir page */
+.header-sv {
+  height: 100vh;
+  background-color: #fff;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+
+.sv-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+#souvenir-page {
+  text-align: center;
+  margin-bottom: 150px;
+}
+
+.subtitle-section {
+  font-size: 20px;
+  font-family: 'Noto Sans JP';
+  letter-spacing: 0.2em;
+  font-weight: 300;
+}
+
+.sv-title {
+  display: inline-block;
+  font-family: 'Noto Sans';
+  font-weight: 300;
+  font-size: 48px;
+  letter-spacing: 0.2em;
+  padding: 5px;
+  border-bottom: solid 2px;
+}
+
+.souvenirs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 50px 200px 50px;
+}
+
+.souvenir {
+  width: 275px;
+  background-color: #DEE9EB;
+  margin: 30px 15px;
+}
+
+.sv-page-img {
+  width: 275px;
+  height: 205px;
+  object-fit: cover;
+}
+
+.sv-text {
+  text-align: left;
+  padding: 20px;
+}
+
+.place {
+  display: flex;
+  align-items: center;
+}
+
+.icon-place {
+  height: 16px;
 }
