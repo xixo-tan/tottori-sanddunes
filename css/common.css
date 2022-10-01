@@ -75,6 +75,17 @@ header {
   background-color: #FFFAF4;
 }
 
+header h1 {
+  font-family: 'Hiragino Maru Gothic Pro';
+  font-weight: 200;
+  letter-spacing: 0.2em;
+  color: #483b34;
+}
+
+header h1 a {
+  text-decoration: none;
+}
+
 ul {
   display: flex;
   justify-content: center;
@@ -82,15 +93,20 @@ ul {
 
 li {
   display: inline-block;
-  margin: 0 15px;
+  margin: 0 30px;
   font-family: 'Noto Sans';
   font-size: 26px;
   font-weight: 300;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.2em;
 }
 
 li a {
   text-decoration: none;
+}
+
+li a:hover {
+  transform: 1s;
+  color: #D5A28A;
 }
 
 /* responsive */
@@ -277,6 +293,10 @@ li a {
   padding-bottom: 5px;
 }
 
+.cafe-btn:hover {
+  color: #8E776A;
+}
+
 .cafe-style-odd {
   display: flex;
   flex-direction: row;
@@ -448,10 +468,52 @@ li a {
 }
 
 .viewmore-btn {
+  display: inline-block;
   text-decoration: none;
   background-color: #E0B394;
   color: #fff;
   padding: 10px 20px;
+}
+
+.viewmore-btn:hover {
+  animation: pulse 1s;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 #E0B394;
+  }
+
+  100% {
+    box-shadow: 0 0 0 1.2em rgba(0, 0, 0, 0);
+  }
+}
+
+@media screen and (max-width:480px) {
+  #souvenir {
+    text-align: center;
+    margin-bottom: 150px;
+  }
+
+  .subtitle-section {
+    font-size: 100px;
+    font-family: 'Noto Sans JP';
+    letter-spacing: 0.2em;
+    font-weight: 300;
+  }
+
+  .souvenirs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 50px 200px 50px;
+  }
+
+  .sv-img {
+    width: 105px;
+    height: 80px;
+    object-fit: contain;
+  }
 }
 
 /* footer */
@@ -477,12 +539,18 @@ footer {
   margin-bottom: 30px;
 }
 
-.special-thanks a {
+.st-person {
   display: flex;
   align-items: center;
   margin: 10px;
   margin-left: 50px;
   text-decoration: none;
+  padding-bottom: 2px;
+}
+
+/* help */
+.st-person:hover {
+  color: #8E776A;
 }
 
 .st-icon {
@@ -508,15 +576,15 @@ footer {
 }
 
 .contact-address {
-  margin-top: 15px;
+  margin-top: 50px;
   font-size: 16px;
-  text-decoration: none;
+  border-bottom: #372A23;
 }
 
 /* souvenir page */
-.header-sv {
+.bg-switcher {
   height: 100vh;
-  background-color: #fff;
+  background-image: url('./images/sv-colorful.jpeg');
   background-size: cover;
   background-position: center center;
   position: relative;
@@ -526,18 +594,29 @@ footer {
   position: absolute;
   top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.svpage-title {
+  color: #FFFAF4;
+  font-family: 'Noto Sans';
+  font-size: 64px;
+  letter-spacing: 0.1em;
+}
+
+.svpage-subtitle {
+  color: #FFFAF4;
+  font-size: 20px;
+  font-family: 'Noto Sans JP';
+  letter-spacing: 0.2em;
+  font-weight: 300;
 }
 
 #souvenir-page {
   text-align: center;
   margin-bottom: 150px;
-}
-
-.subtitle-section {
-  font-size: 20px;
-  font-family: 'Noto Sans JP';
-  letter-spacing: 0.2em;
-  font-weight: 300;
+  margin-top: 150px;
 }
 
 .sv-title {
@@ -546,8 +625,8 @@ footer {
   font-weight: 300;
   font-size: 48px;
   letter-spacing: 0.2em;
-  padding: 5px;
-  border-bottom: solid 2px;
+  padding: 5px 15px;
+  border-bottom: solid 2px #E0B394;
 }
 
 .souvenirs {
