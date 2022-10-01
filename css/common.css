@@ -73,8 +73,8 @@ header {
   justify-content: space-between;
   padding: 25px 3%;
   background-color: #FFFAF4;
-  height: 170px;
-  width: 100%;
+  /* height: 170px;
+  width: 100%; */
 }
 
 /*HeightMinというクラス名がついたら高さを小さく、上部固定に*/
