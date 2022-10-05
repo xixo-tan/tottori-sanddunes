@@ -866,3 +866,26 @@ footer {
 .icon-place {
   height: 16px;
 }
+
+@media screen and (max-width:480px) {
+  .sv-title {
+    font-size: 24px;
+  }
+
+  #souvenir-page .souvenir {
+    width: 155px;
+  }
+
+  .sv-page-img {
+    width: 155px;
+    height: 120px;
+  }
+
+  .sv-text {
+    padding: 10px;
+  }
+
+  .sv-text p {
+    font-size: 12px;
+  }
+}
