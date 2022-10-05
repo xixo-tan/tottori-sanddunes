@@ -646,6 +646,9 @@ li a:hover {
 /* footer */
 footer {
   background-color: #EADCD2;
+  width: 100vw;
+  padding: 10px;
+  margin: 0;
 }
 
 .footer-main-title {
@@ -668,14 +671,18 @@ footer {
 
 .footer-title {
   font-size: 32px;
+  font-weight: 500;
   margin-bottom: 30px;
+}
+
+.st-contents {
+  margin-left: 50px;
 }
 
 .st-person {
   display: flex;
   align-items: center;
   margin: 10px;
-  margin-left: 50px;
   text-decoration: none;
   padding-bottom: 2px;
 }
@@ -689,6 +696,10 @@ footer {
   width: 18px;
   height: 18px;
   margin-right: 10px;
+}
+
+.contact-contents {
+  margin-left: 50px;
 }
 
 .contact-box {
@@ -714,14 +725,71 @@ footer {
 }
 
 @media screen and (max-width:480px) {
+
   .footer-main-title {
     display: none;
+  }
+
+  .footer-title {
+    font-size: 24px;
+    margin-bottom: 10px;
   }
 
   .footer-box {
     display: block;
     padding: 0px;
     padding-right: 0px;
+  }
+
+  .special-thanks {
+    margin: 20px auto 0;
+  }
+
+  .st-message {
+    margin-bottom: 10px;
+  }
+
+  .st-person {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    text-decoration: none;
+  }
+
+  .st-person p {
+    font-size: 14px;
+  }
+
+  .st-icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+  }
+
+  .contact {
+    margin: 30px auto 30px;
+  }
+
+  .contact-icon {
+    height: 22px;
+    margin: 8px;
+  }
+
+  .contact-name {
+    font-size: 24px;
+    font-family: 'Noto Sans';
+    margin-right: 50px;
+  }
+
+  .contact-icon {
+    height: 24px;
+    margin: 10px;
+  }
+
+  .contact-address {
+    margin-top: 50px;
+    font-size: 16px;
+    border-bottom: #372A23;
   }
 }
 
