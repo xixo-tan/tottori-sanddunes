@@ -21,8 +21,21 @@ body {
 
 /* responsive */
 @media screen and (max-width:480px) {
+  * {
+    margin: 0;
+    padding: 0;
+    color: #372A23;
+    white-space: nowrap;
+  }
+
+  body {
+    background-color: #FFFAF4;
+    overflow-x: hidden;
+  }
+
   .title-section {
     font-size: 20px;
+    margin-bottom: 15px;
   }
 }
 
@@ -98,14 +111,14 @@ header {
   }
 }
 
-header h1 {
+#header-pc h1 {
   font-family: 'Hiragino Maru Gothic Pro';
   font-weight: 200;
   letter-spacing: 0.2em;
   color: #483b34;
 }
 
-header h1 a {
+#header-pc h1 a {
   text-decoration: none;
 }
 
@@ -135,6 +148,7 @@ li a:hover {
 /* responsive */
 @media screen and (max-width:480px) {
   header {
+    display: none;
     visibility: hidden;
   }
 }
@@ -334,6 +348,35 @@ li a:hover {
   margin-bottom: 200px;
 }
 
+@media screen and (max-width:480px) {
+  .cafe-name {
+    font-size: 23px;
+  }
+
+  .cafe-discription {
+    font-size: 11px;
+    margin: 20px;
+    overflow-wrap: normal;
+    word-break: break-all;
+  }
+
+  .cafe-btn {
+    border: none;
+    display: inline-block;
+    background-color: #D5A28A;
+    font-size: 10px;
+    letter-spacing: normal;
+  }
+
+  .cafe-style-odd,
+  .cafe-style-even {
+    display: block;
+    text-align: center;
+    margin-bottom: 30px;
+    align-items: center;
+  }
+}
+
 /* .takahama-bg-box {
   width: 488px;
   height: 488px;
@@ -463,6 +506,43 @@ li a:hover {
   padding-right: 500px;
 }
 
+@media screen and (max-width:480px) {
+
+  .takahama-img-box::before,
+  .totto-img-box::before,
+  .sandbox-img-box::before,
+  .sankaku-img-box::before {
+    content: none;
+  }
+
+  .takahama-img,
+  .totto-img,
+  .sandbox-img,
+  .sankaku-img {
+    margin: 0;
+    width: 326px;
+    height: 220px;
+    object-fit: cover;
+  }
+
+  .takahama-text,
+  .totto-text,
+  .sandbox-text,
+  .sankaku-text {
+    margin: 0;
+  }
+
+  .takahama-btn,
+  .totto-btn,
+  .sandbox-btn,
+  .sankaku-btn {
+    margin: 0;
+    padding: 10px;
+    border-radius: 5px;
+    width: 85px;
+  }
+}
+
 /* souvenirs */
 #souvenir {
   text-align: center;
@@ -519,8 +599,7 @@ li a:hover {
   }
 
   .subtitle-section {
-    font-size: 100px;
-    font-family: 'Noto Sans JP';
+    font-size: 11px;
     letter-spacing: 0.2em;
     font-weight: 300;
   }
@@ -529,13 +608,15 @@ li a:hover {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 50px 200px 50px;
+    width: 100vw;
+    margin: 30px 0;
   }
 
   .sv-img {
     width: 105px;
     height: 80px;
-    object-fit: contain;
+    object-fit: cover;
+    margin: 5px;
   }
 }
 
@@ -609,6 +690,18 @@ footer {
   border-bottom: #372A23;
 }
 
+@media screen and (max-width:480px) {
+  .footer-main-title {
+    display: none;
+  }
+
+  .footer-box {
+    display: block;
+    padding: 0px;
+    padding-right: 0px;
+  }
+}
+
 /* souvenir page */
 .bg-switcher {
   height: 100vh;
@@ -655,13 +748,6 @@ footer {
   letter-spacing: 0.2em;
   padding: 5px 15px;
   border-bottom: solid 2px #E0B394;
-}
-
-.souvenirs {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: 50px 200px 50px;
 }
 
 .souvenir {
