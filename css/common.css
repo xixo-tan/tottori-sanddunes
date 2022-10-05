@@ -854,6 +854,17 @@ footer {
 }
 
 @media screen and (max-width:480px) {
+  .bg-switcher {
+    display: block;
+    width: 100vw;
+    height: 30vh;
+  }
+
+  .bg-switcher h1,
+  .bg-switcher nav {
+    display: none;
+  }
+
   #souvenir-page {
     text-align: center;
     margin-bottom: 100px;
