@@ -42,6 +42,16 @@ $(document).ready(function () {
     });
   });
 
+    $('.slick').slick({
+      autoplay: true,
+      slidesToShow: 1,
+      infinite: true,
+      slidesToScroll: 1,
+      dots: true,
+      arrows: true,
+      centerPadding: '0',
+    });
+
   $('.bg-switcher').bgSwitcher({
     images: [
       '../images/sv-colorful.jpeg',

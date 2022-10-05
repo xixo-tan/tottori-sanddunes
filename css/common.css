@@ -34,7 +34,7 @@ body {
   }
 
   .title-section {
-    font-size: 20px;
+    font-size: 25px;
     margin-bottom: 15px;
   }
 }
@@ -284,6 +284,10 @@ li a:hover {
   object-position: top 0px left 15px;
 }
 
+.slick {
+  display: none;
+}
+
 /* responsive */
 @media screen and (max-width:480px) {
   .title-sd {
@@ -295,7 +299,19 @@ li a:hover {
   }
 
   .sd-images {
-    visibility: hidden;
+    display: none;
+  }
+
+  .slick {
+    display: block;
+    margin: 20px;
+  }
+
+  .sd-image {
+    width: 280px;
+    height: 200px;
+    margin: 0;
+    object-fit: cover;
   }
 }
 
@@ -349,8 +365,13 @@ li a:hover {
 }
 
 @media screen and (max-width:480px) {
+  #cafe {
+    margin-top: 200px;
+  }
+
   .cafe-name {
     font-size: 23px;
+    margin-top: 20px;
   }
 
   .cafe-discription {
@@ -363,16 +384,19 @@ li a:hover {
   .cafe-btn {
     border: none;
     display: inline-block;
-    background-color: #D5A28A;
+    background-color: none;
     font-size: 10px;
     letter-spacing: normal;
+    margin-top: 10px;
+    border: solid 1px #D5A28A;
   }
 
   .cafe-style-odd,
   .cafe-style-even {
     display: block;
     text-align: center;
-    margin-bottom: 30px;
+    margin-top: 50px;
+    margin-bottom: 0;
     align-items: center;
   }
 }
@@ -536,7 +560,6 @@ li a:hover {
   .totto-btn,
   .sandbox-btn,
   .sankaku-btn {
-    margin: 0;
     padding: 10px;
     border-radius: 5px;
     width: 85px;
