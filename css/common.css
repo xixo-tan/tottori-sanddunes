@@ -26,7 +26,6 @@ body {
     padding: 0;
     color: #372A23;
     white-space: nowrap;
-    overflow-x: hidden;
   }
 
   body {
@@ -91,35 +90,14 @@ header {
   width: 100%; */
 }
 
-/*HeightMinというクラス名がついたら高さを小さく、上部固定に*/
-#header.HeightMin {
-  position: fixed;
-  z-index: 999;
-  /*最前面へ*/
-  height: 70px;
-  animation: DownAnime 0.5s forwards;
-}
-
-@keyframes DownAnime {
-  from {
-    opacity: 0;
-    transform: translateY(-170px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-#header-pc h1 {
+header h1 {
   font-family: 'Hiragino Maru Gothic Pro';
   font-weight: 200;
   letter-spacing: 0.2em;
   color: #483b34;
 }
 
-#header-pc h1 a {
+header h1 a {
   text-decoration: none;
 }
 
@@ -295,6 +273,10 @@ li a:hover {
     font-size: 26px;
   }
 
+  #sandDune {
+    margin-bottom: 180px;
+  }
+
   #sandDune p {
     font-size: 9px;
   }
@@ -366,10 +348,6 @@ li a:hover {
 }
 
 @media screen and (max-width:480px) {
-  #cafe {
-    margin-top: 200px;
-  }
-
   .cafe-name {
     font-size: 23px;
     margin-top: 20px;
@@ -619,7 +597,7 @@ li a:hover {
 @media screen and (max-width:480px) {
   #souvenir {
     text-align: center;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
   }
 
   .subtitle-section {
@@ -641,6 +619,11 @@ li a:hover {
     height: 80px;
     object-fit: cover;
     margin: 5px;
+  }
+
+  .viewmore-btn {
+    font-size: 13px;
+    padding: 5px 15px;
   }
 }
 
@@ -871,8 +854,15 @@ footer {
 }
 
 @media screen and (max-width:480px) {
+  #souvenir-page {
+    text-align: center;
+    margin-bottom: 100px;
+    margin-top: 80px;
+  }
+
   .sv-title {
     font-size: 24px;
+    margin-bottom: 40px;
   }
 
   #souvenir-page .souvenir {
