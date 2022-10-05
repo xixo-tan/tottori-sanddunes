@@ -26,6 +26,7 @@ body {
     padding: 0;
     color: #372A23;
     white-space: nowrap;
+    overflow-x: hidden;
   }
 
   body {
@@ -631,8 +632,8 @@ li a:hover {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    width: 100vw;
-    margin: 30px 0;
+    width: calc(100vw - 15px);
+    margin: 15px auto;
   }
 
   .sv-img {
@@ -673,10 +674,12 @@ footer {
   font-size: 32px;
   font-weight: 500;
   margin-bottom: 30px;
+  font-family: 'Noto Sans JP';
 }
 
 .st-contents {
   margin-left: 50px;
+  font-family: 'Noto Sans JP';
 }
 
 .st-person {
@@ -776,7 +779,7 @@ footer {
   }
 
   .contact-name {
-    font-size: 24px;
+    font-size: 18px;
     font-family: 'Noto Sans';
     margin-right: 50px;
   }
@@ -874,6 +877,7 @@ footer {
 
   #souvenir-page .souvenir {
     width: 155px;
+    margin: 5px;
   }
 
   .sv-page-img {
@@ -886,6 +890,10 @@ footer {
   }
 
   .sv-text p {
-    font-size: 12px;
+    font-size: 10px;
+  }
+
+  .icon-place {
+    height: 10px;
   }
 }
