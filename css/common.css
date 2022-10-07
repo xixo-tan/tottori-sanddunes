@@ -155,25 +155,12 @@ li {
   text-align: center;
   font-size: 20px;
   margin-bottom: 24px;
+  letter-spacing: 0.2em;
 }
 
 .nav-items__item:last-child a {
   margin-bottom: 0;
 }
-
-/* ul {
-  display: flex;
-  justify-content: center;
-}
-
-li {
-  display: inline-block;
-  margin: 0 30px;
-  font-family: 'Noto Sans';
-  font-size: 26px;
-  font-weight: 300;
-  letter-spacing: 0.2em;
-} */
 
 li a:hover {
   transform: 1s;
@@ -237,8 +224,8 @@ li a:hover {
 
 /* responsive */
 @media screen and (min-width: 960px) {
-  .header__title {
-    width: 120px;
+  .header__title h1 {
+    font-size: 23px;
   }
 
   .header__nav {
@@ -251,12 +238,16 @@ li a:hover {
     width: 50%;
   }
 
+  .header__inner {
+    padding: 10px 10%;
+  }
+
   .nav__items {
     width: 100%;
     display: flex;
     align-items: center;
     height: initial;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   .nav-items {
