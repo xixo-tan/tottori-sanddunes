@@ -14,20 +14,31 @@
   <title>鳥取砂丘さんぽ-お土産</title>
 </head>
 <body>
-  <header class="bg-switcher">
-    <h1><a href="#">鳥取砂丘さんぽ</a></h1>
-    <nav>
-      <ul>
-        <li><a href="#">SandDunes</a></li>
-        <li><a href="index.html">Cafe</a></li>
-        <li><a href="souvenirs.html">Souvenir</a></li>
-      </ul>
-    </nav>
+  <header class="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__title header-title">
+        <h1>鳥取砂丘さんぽ</h1>
+      </a>
+      <nav class="header__nav nav" id="js-nav">
+        <ul class="nav__items nav-items">
+          <li class="nav-items__item"><a href="index.html">SandDunes</a></li>
+          <li class="nav-items__item"><a href="#cafe">Cafe</a></li>
+          <li class="nav-items__item"><a href="#souvenir">Souvenir</a></li>
+        </ul>
+      </nav>
+      <button class="header__hamburger hamburger" id="js-hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+  <div class="bg-switcher">
     <div class="sv-logo">
       <h2 class="svpage-title">Souvenir</h2>
       <h2 class="svpage-subtitle">- お土産 -</h2>
     </div>
-  </header>
+  </div>
 
   <section id="souvenir-page">
     <h3 class="sv-title">Food & Drink</h3>

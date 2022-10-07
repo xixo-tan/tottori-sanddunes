@@ -104,6 +104,7 @@ li {
 
 .header__inner {
   padding: 5px 20px;
+  background-color: #FFFAF4;
   /*左右の余白確保*/
   display: flex;
   /*ロゴとハンバーガーメニューを横に並べる*/
