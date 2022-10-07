@@ -90,28 +90,8 @@ li {
 }
 
 /* header */
-/* ul {
-  display: flex;
-  justify-content: center;
-}
-
-li {
-  display: inline-block;
-  margin: 0 30px;
-  font-family: 'Noto Sans';
-  font-size: 26px;
-  font-weight: 300;
-  letter-spacing: 0.2em;
-} */
-
-li a:hover {
-  transform: 1s;
-  color: #D5A28A;
-}
-
-
 .header {
-  background-color: white;
+  background-color: #FFFAF4;
   width: 100%;
   height: 50px;
   position: fixed;
@@ -119,10 +99,11 @@ li a:hover {
   left: 0;
   right: 0;
   z-index: 999;
+  opacity: 0.9;
 }
 
 .header__inner {
-  padding: 0 20px;
+  padding: 5px 20px;
   /*左右の余白確保*/
   display: flex;
   /*ロゴとハンバーガーメニューを横に並べる*/
@@ -131,11 +112,6 @@ li a:hover {
   height: inherit;
   /*親要素の高さを継承*/
   position: relative;
-}
-
-/* ヘッダーのロゴ部分 */
-.header__title {
-  width: 80px;
 }
 
 .header__title h1 {
@@ -163,9 +139,50 @@ li a:hover {
   /*ハンバーガーメニュークリック時のナビゲーションメニュー出現を遅延*/
 }
 
+.nav-items {
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* ナビのリンク */
+.nav-items__item a {
+  color: #372A23;
+  width: 100%;
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 24px;
+}
+
+.nav-items__item:last-child a {
+  margin-bottom: 0;
+}
+
+/* ul {
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  display: inline-block;
+  margin: 0 30px;
+  font-family: 'Noto Sans';
+  font-size: 26px;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+} */
+
+li a:hover {
+  transform: 1s;
+  color: #D5A28A;
+}
+
 /* ハンバーガーメニュー */
 .header__hamburger {
-  width: 48px;
+  width: 35px;
   height: 100%;
 }
 
@@ -219,7 +236,44 @@ li a:hover {
 }
 
 /* responsive */
-@media screen and (max-width:480px) {}
+@media screen and (min-width: 960px) {
+  .header__title {
+    width: 120px;
+  }
+
+  .header__nav {
+    position: static;
+    transform: initial;
+    background-color: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: end;
+    width: 50%;
+  }
+
+  .nav__items {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: initial;
+    justify-content: space-between;
+  }
+
+  .nav-items {
+    position: inherit;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+  }
+
+  .nav-items__item a {
+    margin-bottom: 0;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
 
 /* first-view */
 #first-view {
