@@ -468,6 +468,17 @@ li a:hover {
   color: #8E776A;
 }
 
+.cafe-btn p {
+  padding-bottom: 3px;
+  display: inline-block;
+}
+
+.icon-openNewPage {
+  margin-left: 4px;
+  width: 18px;
+  object-fit: contain;
+}
+
 .cafe-style-odd {
   display: flex;
   flex-direction: row;
@@ -503,6 +514,12 @@ li a:hover {
     letter-spacing: normal;
     margin-top: 10px;
     border: solid 1px #D5A28A;
+  }
+
+  .icon-openNewPage {
+    margin-left: 4px;
+    width: 10px;
+    object-fit: contain;
   }
 
   .cafe-style-odd,
